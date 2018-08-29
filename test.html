@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<?php
+$nameErr=$emailErr=$passwordErr="";
+$name=$email=$password=$gender="";
+
+if($_SERVER['REQUEST_METHOD']=="POST"){
+
+    if(empty($name)
+}
+
+
+?>
+<!--<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">-->
+    <!--<h2>PHP验证列子</h2>-->
+    <!--<span class="error">*是必须要填写的</span>-->
+    <!--<br><br>-->
+    <!--<span>姓名：</span>-->
+    <!--<input type="text" name="username" placeholder="请输入......">-->
+    <!--<span class="error">*</span><span><?php echo $nameErr"?></span>-->
+    <!--<br><br>-->
+    <!--<span>邮箱：</span>-->
+    <!--<input type="email" name="email" placeholder="请输入......">-->
+    <!--<span class="error">*</span><span><?php echo $addressErr"?></span>-->
+    <!--<br><br>-->
+    <!--<span>密码：</span>-->
+    <!--<input type="password" name="password" placeholder="请输入......">-->
+    <!--<span class="error">*</span><span><?php echo $passwordErr"?></span>-->
+    <!--<br><br>-->
+    <!--<span>性别：</span>-->
+    <!--<input type="radio" name="gender" value="男" >-->
+    <!--<input type="radio" name="gender" value="女">-->
+    <!--<br><br>-->
+    <!--<input type="submit" value="提交">-->
+<!--</form>-->
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <span>文件：</span>
+    <input type="file" name="file" id="file">
+    <input type="submit" name="submit" value="上传">
+</form>
+</body>
+<!--<?php-->
+<!--echo "您输入的是";-->
+<!--echo $_POST['username'];-->
+<!--?>-->
+</html>
+
